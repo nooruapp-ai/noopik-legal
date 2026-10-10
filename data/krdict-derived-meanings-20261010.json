@@ -1,0 +1,65 @@
+{
+  "schema_version": 1,
+  "revision": "2026-10-10",
+  "title": "NOOPIK 辞典由来の日本語語義・対象フィールド",
+  "author": "国立国語院（National Institute of Korean Language）",
+  "source_title": "韓国語－日本語学習辞典（韓国語基礎辞典）",
+  "source_url": "https://krdict.korean.go.kr/jpn/mainAction",
+  "source_policy_url": "https://krdict.korean.go.kr/jpn/kboardPolicy/copyRightTermsInfo?nation=jpn",
+  "license": {
+    "name": "CC BY-SA 2.0 KR",
+    "url": "https://creativecommons.org/licenses/by-sa/2.0/kr/",
+    "legal_code_url": "https://creativecommons.org/licenses/by-sa/2.0/kr/legalcode.ko"
+  },
+  "adaptation_credit": "NOOPIK：語義の選択・短縮・表記整理・補足修正",
+  "modifications": "学習用に語義を選択・短縮し、表記を整理し、同形異義語の区別と文脈に合わせた補足・修正を行いました。",
+  "scope": "CSV内のmeaning_jaとその改変部分。idとkoreanは対象を識別するための列です。アプリ全体のライセンスではありません。",
+  "scope_note": "NIKL補足の手動修正語義も保守的に含めます。全行が辞典原文の複写であることや、辞典IDがない行の独立執筆を断定するものではありません。",
+  "source_version_note": "これは2026年10月10日のアプリ内語義の出力であり、同日の辞典全体のスナップショットではありません。歴史的なKRdict変換データの正確な取得版は、この公開ファイルでは特定していません。",
+  "reuse_note": "ライセンスの条件に従う商用利用・複製・再配布・改変を、本アプリの利用規約で制限しません。",
+  "attribution_example": "国立国語院『韓国語－日本語学習辞典』、NOOPIKによる選択・短縮・表記整理・補足修正、日本語語義2026年10月10日版、CC BY-SA 2.0 KR。原資料URLとライセンスURLを併記してください。",
+  "download": {
+    "path": "krdict-derived-meanings-20261010.csv",
+    "encoding": "UTF-8",
+    "rows": 5218,
+    "sha256": "a21e11d50828d90f9dbca99fe1379dd0c0a3718ad44039ed859a1b4930e369ce",
+    "columns": [
+      "id",
+      "korean",
+      "meaning_ja",
+      "dictionary_ids",
+      "related_dictionary_ids",
+      "source_reference"
+    ]
+  },
+  "source_assets": [
+    {
+      "path": "data/vocab_nikl_2017_supplement.csv",
+      "field": "meaning_ja",
+      "rows": 4553,
+      "sha256": "4730a329b0cc30f63a057018e5a45f555804ed3bd3da343721b4c46d83b1f720"
+    },
+    {
+      "path": "data/vocab_topik_public_supplement.csv",
+      "field": "meaning_ja",
+      "rows": 665,
+      "sha256": "2dbcdea518d4d8dba468d7b3b9980e4cab9de12d1d601e4563a6660698687f8e"
+    }
+  ],
+  "source_references": {
+    "dictionary_entry": "保持している取込台帳のdictionaryIds。複数IDは|で区切ります。",
+    "related_dictionary_entry": "取込台帳の関連語ID。対象語そのものの辞典IDとは限りません。",
+    "manual_review_no_entry_id": "保持している取込台帳に対象語・関連語の辞典IDがない手動修正行。ライセンス対象には保守的に含めます。",
+    "term_bank_and_manual_correction": "KRdict KR-JP変換データと手動修正に由来する補足語義。この公開ファイルでは個別辞典IDを確定できないため空欄としています。"
+  },
+  "excluded_material": [
+    "A/B/C語彙の新作日本語語義",
+    "TOPIK I・II補足語彙の新作日本語語義",
+    "GUIDE補足語彙",
+    "独自問題・解説",
+    "独自例文",
+    "プログラム",
+    "画像",
+    "音声"
+  ]
+}
