@@ -12,8 +12,12 @@
 body { margin:0; } header { background:#fff; border-bottom:1px solid #d8dbe2; }
 header div,main { width:min(760px,calc(100% - 40px)); margin-inline:auto; }
 header div { padding:18px 0; color:#5848d8; font-weight:700; }
-main { padding:24px 0 48px; } h1 { font-size:1.7rem; line-height:1.5; margin:24px 0; }
+main { padding:24px 0 48px; } h1 { font-size:clamp(1.3rem,5vw,1.7rem); line-height:1.5; margin:24px 0; }
 p { white-space:pre-line; margin:0 0 24px; } h1,p,a { overflow-wrap:anywhere; }
+h1,.policy-heading { text-wrap:balance; } p { text-wrap:pretty; }
+p:has(.policy-heading) { white-space:normal; }
+.policy-copy { white-space:pre-line; }
+.policy-heading { display:block; font-size:1.1rem; line-height:1.55; font-weight:700; margin-bottom:8px; white-space:normal; }
 nav { display:flex; flex-wrap:wrap; gap:8px; } a { color:#4032b1; text-underline-offset:.2em; }
 a:focus-visible { outline:3px solid #5848d8; outline-offset:4px; }
 footer { margin-top:32px; padding-top:16px; border-top:1px solid #d8dbe2; }
@@ -26,29 +30,29 @@ footer { margin-top:32px; padding-top:16px; border-top:1px solid #d8dbe2; }
 <h1>使用條款</h1>
 <article data-policy-document="terms" data-source-batch-sha256="9f8606157e25b7ea25c24821e6b3ad68ce794bedd9f66fea73e98832238c1137">
 <p data-policy-key="legal_terms_00">生效日期：2026年10月14日</p>
-<p data-policy-key="legal_terms_01">1. 服務
-NOOPIK 是協助準備韓國語能力測驗（TOPIK）的獨立教育應用程式，並非與 TOPIK 主辦單位或官方機構合作，或獲其官方認可的服務。</p>
-<p data-policy-key="legal_terms_02">2. 學習內容
-題目與解析是參考考試形式獨立製作的練習教材。我們不保證提供實際考題，也不保證通過考試或提升分數。</p>
+<p data-policy-key="legal_terms_01"><span class="policy-heading" role="heading" aria-level="2">1. 服務</span>
+<span class="policy-copy">NOOPIK 是協助準備韓國語能力測驗（TOPIK）的獨立教育應用程式，並非與 TOPIK 主辦單位或官方機構合作，或獲其官方認可的服務。</span></p>
+<p data-policy-key="legal_terms_02"><span class="policy-heading" role="heading" aria-level="2">2. 學習內容</span>
+<span class="policy-copy">題目與解析是參考考試形式獨立製作的練習教材。我們不保證提供實際考題，也不保證通過考試或提升分數。</span></p>
 <p data-policy-key="legal_terms_03">免費方案每天以日本時間為準，提供閱讀、聽力、文法新題各 1 題，以及 5 個新單字。已使用的學習內容與複習紀錄可繼續使用。基本額度用完後，若您選擇獎勵式廣告並完成領取獎勵的條件，即可增加所選領域的 1 題，或 3 個新單字。額外額度也會在日本時間午夜重設。廣告觀看次數不設每日上限，但可能因廣告供應、連線或同意狀態而無法提供廣告。若關閉廣告或未完成獎勵條件，則不會發放額外額度。Pro 提供無廣告學習、個人化學習規劃與詳細分析。尚未推出的功能及另行收費的付費批改，不包含在 Pro 內。</p>
-<p data-policy-key="legal_terms_04">3. NOOPIK Pro 訂閱
-月繳與年繳訂閱透過您裝置上的 Apple App Store 或 Google Play，依購買畫面顯示的價格與期間處理。商店認定符合資格的新使用者，可能會看到 7 天免費試用；只有您在商店購買畫面同意免費期間、試用後價格及自動續訂時，試用才會開始。僅註冊帳號或開啟應用程式，不會啟用商店訂閱試用。可免費瀏覽的畫面與商店訂閱試用是不同的。</p>
+<p data-policy-key="legal_terms_04"><span class="policy-heading" role="heading" aria-level="2">3. NOOPIK Pro 訂閱</span>
+<span class="policy-copy">月繳與年繳訂閱透過您裝置上的 Apple App Store 或 Google Play，依購買畫面顯示的價格與期間處理。商店認定符合資格的新使用者，可能會看到 7 天免費試用；只有您在商店購買畫面同意免費期間、試用後價格及自動續訂時，試用才會開始。僅註冊帳號或開啟應用程式，不會啟用商店訂閱試用。可免費瀏覽的畫面與商店訂閱試用是不同的。</span></p>
 <p data-policy-key="legal_terms_05">若不希望 Apple 免費試用到期後續訂，請至少在試用結束前 24 小時取消訂閱。使用 Google Play 時，也應在商店顯示的下次扣款時間前取消，並確認該商店的相關條件。若未取消，訂閱將依購買畫面告知的正常價格自動續訂。後續的 Apple 訂閱也應至少在目前訂閱期間結束前 24 小時取消。取消後可使用至哪一天，以所用商店顯示的日期為準。您可在商店的訂閱或定期付款設定中管理及取消訂閱；刪除應用程式或帳號，不會自動取消訂閱。</p>
-<p data-policy-key="legal_terms_06">4. 付費教師批改
-目前正式公開的版本不提供或販售付費教師批改。若未來在其他版本啟用此功能，我們會在付款前說明服務範圍、價格與處理方式，並事先完成相關商店審核及隱私權告知。</p>
-<p data-policy-key="legal_terms_07">5. 付款與退款
-付款透過您裝置上的 Apple App Store 或 Google Play 應用程式內購買處理。購買核准、扣款與退款，依該商店及您的商店帳號適用條件辦理。您可透過所用商店的購買紀錄或官方退款說明申請退款。若發生重複扣款或付款後受理錯誤，請勿再次付款；請先確認該商店的購買紀錄，再聯絡 support@noopik.app。</p>
-<p data-policy-key="legal_terms_08">6. 使用者責任
-學習上的判斷、考試報名及考試日期確認，由使用者自行負責。最新考試日期與規定，應以 TOPIK 官方公告為準。</p>
-<p data-policy-key="legal_terms_09">7. 智慧財產權
-未經許可，不得複製、散布、販售或自動擷取本應用程式的題目、解析、設計及程式。TOPIK 名稱及相關權利，歸各權利人所有。</p>
+<p data-policy-key="legal_terms_06"><span class="policy-heading" role="heading" aria-level="2">4. 付費教師批改</span>
+<span class="policy-copy">目前正式公開的版本不提供或販售付費教師批改。若未來在其他版本啟用此功能，我們會在付款前說明服務範圍、價格與處理方式，並事先完成相關商店審核及隱私權告知。</span></p>
+<p data-policy-key="legal_terms_07"><span class="policy-heading" role="heading" aria-level="2">5. 付款與退款</span>
+<span class="policy-copy">付款透過您裝置上的 Apple App Store 或 Google Play 應用程式內購買處理。購買核准、扣款與退款，依該商店及您的商店帳號適用條件辦理。您可透過所用商店的購買紀錄或官方退款說明申請退款。若發生重複扣款或付款後受理錯誤，請勿再次付款；請先確認該商店的購買紀錄，再聯絡 support@noopik.app。</span></p>
+<p data-policy-key="legal_terms_08"><span class="policy-heading" role="heading" aria-level="2">6. 使用者責任</span>
+<span class="policy-copy">學習上的判斷、考試報名及考試日期確認，由使用者自行負責。最新考試日期與規定，應以 TOPIK 官方公告為準。</span></p>
+<p data-policy-key="legal_terms_09"><span class="policy-heading" role="heading" aria-level="2">7. 智慧財產權</span>
+<span class="policy-copy">未經許可，不得複製、散布、販售或自動擷取本應用程式的題目、解析、設計及程式。TOPIK 名稱及相關權利，歸各權利人所有。</span></p>
 <p data-policy-key="legal_terms_10">但明確標示第三方開放授權的資料，應優先適用該資料的授權條款；本條款不會限制該授權所允許的使用方式。適用資料及使用條件，可在「授權與來源說明」中查閱。</p>
-<p data-policy-key="legal_terms_11">8. 資料與裝置
-詳細學習紀錄儲存在裝置上，容量有限的學習快照及支援同步的設定，則會同步至登入的帳號。這並非能完整還原所有本機紀錄或尚未傳送之變更的備份，因此未同步的紀錄，在刪除或更換裝置後可能無法復原。同步範圍及資料的處理與刪除，依隱私權政策辦理。</p>
-<p data-policy-key="legal_terms_12">9. 服務變更與責任
-我們可能因品質改善、法令或營運需要，變更功能與內容。在相關法令允許的範圍內，對於因裝置、通訊環境或使用者的使用行為所造成的間接損失，責任可能受到限制。</p>
-<p data-policy-key="legal_terms_13">10. 聯絡我們
-support@noopik.app</p>
+<p data-policy-key="legal_terms_11"><span class="policy-heading" role="heading" aria-level="2">8. 資料與裝置</span>
+<span class="policy-copy">詳細學習紀錄儲存在裝置上，容量有限的學習快照及支援同步的設定，則會同步至登入的帳號。這並非能完整還原所有本機紀錄或尚未傳送之變更的備份，因此未同步的紀錄，在刪除或更換裝置後可能無法復原。同步範圍及資料的處理與刪除，依隱私權政策辦理。</span></p>
+<p data-policy-key="legal_terms_12"><span class="policy-heading" role="heading" aria-level="2">9. 服務變更與責任</span>
+<span class="policy-copy">我們可能因品質改善、法令或營運需要，變更功能與內容。在相關法令允許的範圍內，對於因裝置、通訊環境或使用者的使用行為所造成的間接損失，責任可能受到限制。</span></p>
+<p data-policy-key="legal_terms_13"><span class="policy-heading" role="heading" aria-level="2">10. 聯絡我們</span>
+<span class="policy-copy">support@noopik.app</span></p>
 </article>
 <footer><nav><a href="privacy-zh-Hant.html">隱私權政策</a> · <a href="terms-zh-Hant.html" aria-current="page">使用條款</a></nav><p><a href="mailto:support@noopik.app">support@noopik.app</a></p></footer>
 </main>
